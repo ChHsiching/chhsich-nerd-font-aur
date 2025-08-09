@@ -1,4 +1,4 @@
-# ChHsich Nerd Font
+# ChHsich Nerd Font - AUR Package
 
 A custom Nerd Font combining ComicShannsMono's English characters with Maple Mono NF CN's Chinese support. Features 16 font variants with complete Unicode coverage.
 
@@ -74,6 +74,35 @@ After installation, you can use the font in your applications by selecting "ChHs
 - `ChHsichNerdFont-ExtraLight` - Extra-light weight
 - `ChHsichNerdFont-ExtraLightItalic` - Extra-light italic style
 
+## Package Information
+
+- **Package Name**: `chhsich-nerd-font`
+- **Version**: 1.0.0
+- **Architecture**: any
+- **License**: OFL (SIL Open Font License)
+- **Dependencies**: fontconfig, xorg-fonts-encodings, xorg-font-util
+- **Provides**: ttf-chhsich-nerd-font
+- **Conflicts**: ttf-chhsich-nerd-font
+- **Replaces**: ttf-chhsich-nerd-font
+
+## Package Structure
+
+```
+chhsich-nerd-font/
+├── PKGBUILD                    # Package build script
+├── chhsich-nerd-font.install   # Post-install script
+├── README.md                   # This file
+└── .gitignore                 # Git ignore rules
+```
+
+## Build Information
+
+The package is built using `makepkg` and includes:
+
+- 16 TTF font files (288.60 MiB installed size)
+- Font configuration files
+- Automatic font cache update on install/upgrade/remove
+
 ## License
 
 This font is licensed under the SIL Open Font License, Version 1.1.
@@ -87,4 +116,9 @@ This font is licensed under the SIL Open Font License, Version 1.1.
 
 - [GitHub Repository](https://github.com/ChHsiching/chhsich-nerd-font)
 - [GitHub Releases](https://github.com/ChHsiching/chhsich-nerd-font/releases)
-- [Nerd Fonts](https://www.nerdfonts.com/) 
+- [AUR Package](https://aur.archlinux.org/packages/chhsich-nerd-font)
+- [Nerd Fonts](https://www.nerdfonts.com/)
+
+## Development
+
+This AUR package is maintained by ChHsiching. For issues or contributions, please visit the [GitHub repository](https://github.com/ChHsiching/chhsich-nerd-font). 
