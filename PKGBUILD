@@ -15,11 +15,11 @@ sha256sums=('SKIP')
 install="$pkgname.install"
 
 package() {
-    # 创建字体目录
-    install -dm755 "$pkgdir/usr/share/fonts/TTF"
+    # 创建字体目录（与原始install.sh保持一致）
+    install -dm755 "$pkgdir/usr/share/fonts/ChHsichNerdFont"
     
-    # 复制字体文件（从解压的目录中）
-    install -m644 "$srcdir"/*.ttf "$pkgdir/usr/share/fonts/TTF/"
+    # 复制字体文件到正确的目录
+    install -m644 "$srcdir"/*.ttf "$pkgdir/usr/share/fonts/ChHsichNerdFont/"
     
     # 创建字体配置目录
     install -dm755 "$pkgdir/etc/fonts/conf.avail"
@@ -30,7 +30,7 @@ package() {
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
-    <dir>/usr/share/fonts/TTF</dir>
+    <dir>/usr/share/fonts/ChHsichNerdFont</dir>
 </fontconfig>
 EOF
     

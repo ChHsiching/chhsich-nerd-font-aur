@@ -42,12 +42,12 @@ makepkg -si
 3. Copy the font files to your system:
    ```bash
    # System-wide installation
-   sudo cp -r ChHsichNerdFont/* /usr/share/fonts/TTF/
+   sudo cp -r ChHsichNerdFont/* /usr/share/fonts/ChHsichNerdFont/
    sudo fc-cache -f -v
    
    # User installation
-   mkdir -p ~/.local/share/fonts
-   cp -r ChHsichNerdFont/* ~/.local/share/fonts/
+   mkdir -p ~/.local/share/fonts/ChHsichNerdFont
+   cp -r ChHsichNerdFont/* ~/.local/share/fonts/ChHsichNerdFont/
    fc-cache -f -v
    ```
 
@@ -102,6 +102,26 @@ The package is built using `makepkg` and includes:
 - 16 TTF font files (288.60 MiB installed size)
 - Font configuration files
 - Automatic font cache update on install/upgrade/remove
+
+## Installation Paths
+
+- **Font files**: `/usr/share/fonts/ChHsichNerdFont/`
+- **Font config**: `/etc/fonts/conf.avail/66-chhsich-nerd-font.conf`
+- **Config link**: `/etc/fonts/conf.d/66-chhsich-nerd-font.conf`
+
+## Uninstallation
+
+The package can be completely removed using:
+
+```bash
+# Remove the package and all its files
+sudo pacman -Rns chhsich-nerd-font
+```
+
+This will:
+- Remove all font files from `/usr/share/fonts/ChHsichNerdFont/`
+- Remove font configuration files
+- Update font cache automatically
 
 ## License
 
