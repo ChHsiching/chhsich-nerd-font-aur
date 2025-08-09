@@ -1,4 +1,4 @@
-# Maintainer: ChHsiching <chhsiching@github.com>
+# Maintainer: ChHsich <hsichingchang@gmail.com>
 pkgname=chhsich-nerd-font
 pkgver=1.0.0
 pkgrel=1
