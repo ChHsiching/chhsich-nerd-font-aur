@@ -1,0 +1,20 @@
+post_install() {
+    echo "Updating font cache..."
+    fc-cache -f -v
+    echo "Font cache updated successfully."
+    echo
+    echo "ChHsich Nerd Font has been installed successfully!"
+    echo "You may need to restart your applications or system to see the new fonts."
+}
+
+post_upgrade() {
+    echo "Updating font cache..."
+    fc-cache -f -v
+    echo "Font cache updated successfully."
+}
+
+post_remove() {
+    echo "Updating font cache..."
+    fc-cache -f -v
+    echo "Font cache updated successfully."
+} 
