@@ -2,6 +2,10 @@
 
 A custom Nerd Font combining ComicShannsMono's English characters with Maple Mono NF CN's Chinese support. Features 16 font variants with complete Unicode coverage.
 
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/ChHsiching/chhsich-nerd-font-aur/releases/tag/v1.0.0)
+[![AUR](https://img.shields.io/badge/AUR-chhsich--nerd--font-blue.svg)](https://aur.archlinux.org/packages/chhsich-nerd-font)
+[![License](https://img.shields.io/badge/license-OFL-green.svg)](LICENSE)
+
 ## About
 
 ChHsich Nerd Font is a custom font that combines:
@@ -90,8 +94,10 @@ After installation, you can use the font in your applications by selecting "ChHs
 ```
 chhsich-nerd-font/
 ├── PKGBUILD                    # Package build script
+├── .SRCINFO                   # Package metadata
 ├── chhsich-nerd-font.install   # Post-install script
 ├── README.md                   # This file
+├── DEVELOPMENT.md             # Development history
 └── .gitignore                 # Git ignore rules
 ```
 
@@ -141,4 +147,12 @@ This font is licensed under the SIL Open Font License, Version 1.1.
 
 ## Development
 
-This AUR package is maintained by ChHsiching. For issues or contributions, please visit the [GitHub repository](https://github.com/ChHsiching/chhsich-nerd-font). 
+This AUR package is maintained by ChHsiching. For issues or contributions, please visit the [GitHub repository](https://github.com/ChHsiching/chhsich-nerd-font).
+
+## Version History
+
+- **v1.0.0** - Initial AUR package release
+  - 16 font variants with complete Unicode coverage
+  - Proper installation paths and uninstall support
+  - Automatic font cache management
+  - Full compatibility with original project 
